@@ -3,384 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
+    <title>Khushi Kumari — MCA Student &amp; Web Developer</title>
+    <meta name="description" content="Portfolio of Khushi Kumari, MCA student and web developer working with HTML, CSS, JavaScript, PHP, Laravel and SQL.">
+    <meta name="theme-color" content="#121211">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav>
-    <h2>Khushi</h2>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-         <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-        <a href="#skills">Skills</a>
-       
-    </div>
-   </nav>
-<!---- home section -->
-   <section id="home">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="home-content">
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#home" class="brand" aria-label="Khushi Kumari — home">
+                <span class="brand__mark">K</span>
+                <span class="brand__name">Khushi</span>
+            </a>
 
-        <p class="intro">Hello, I'm</p>
-        <h1>Khushi Kumari</h1>
+            <nav class="nav__links" id="nav-links" aria-label="Primary">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#certificates" class="nav__link">Certificates</a>
+                <a href="#contact" class="nav__link">Contact</a>
+                <a href="#contact" class="btn btn--gold nav__cta-mobile">Let's Connect</a>
+            </nav>
 
-        <h2>MCA Student & Web Developer</h2>
+            <a href="#contact" class="btn btn--dark nav__cta">Let's Connect</a>
 
-        <p>
-            I am an MCA student passionate about web development,
-            cloud computing and data analytics. I am continuously
-            learning new technologies and improving my skills.
-        </p>
-
-        <div class="home-buttons">
-            <a href="#projects">View Projects</a>
-            <a href="resume.pdf">Download CV</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span>
+            </button>
         </div>
+    </header>
 
-    </div>
+    <main id="main">
 
-    <div class="home-image">
-        <img src="profile.jpg" alt="Khushi Kumari">
-    </div>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow reveal">MCA Student · Web Developer</p>
+                    <h1 class="hero__title reveal">
+                        Building digital <em>experiences</em> with purpose.
+                    </h1>
+                    <p class="hero__lead reveal">
+                        I'm Khushi Kumari, an MCA student passionate about web development,
+                        cloud computing and data analytics. I'm continuously learning new
+                        technologies and refining my craft, one project at a time.
+                    </p>
 
-</section>
-<!-- About Section -->
-<section id="about">
+                    <div class="hero__actions reveal">
+                        <a href="#projects" class="btn btn--dark">
+                            Explore My Work
+                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="resume.pdf" class="btn btn--glass">Download CV</a>
+                    </div>
 
-    <div class="about-content">
+                    <ul class="hero__facts reveal">
+                        <li><span class="dot"></span>Web Development</li>
+                        <li><span class="dot"></span>Cloud &amp; Data</li>
+                        <li><span class="dot"></span>Always Learning</li>
+                    </ul>
+                </div>
 
-        <p class="section-title">About Me</p>
+                <div class="hero__visual reveal">
+                    <div class="portrait">
+                        <span class="ring ring--outer" aria-hidden="true"></span>
+                        <span class="ring ring--inner" aria-hidden="true"></span>
+                        <span class="orbit" aria-hidden="true"><i></i></span>
 
-        <h1>Who I Am</h1>
+                        <div class="portrait__frame" id="portrait-frame">
+                            <img src="profile.jpg" alt="Portrait of Khushi Kumari" class="portrait__img">
+                        </div>
 
-        <p>
-            Hello! My name is Khushi Kumari. I am an MCA student
-            and a passionate web developer.
-        </p>
-
-        <p>
-            I have completed my BCA and currently pursuing MCA.
-            I am learning HTML, CSS, JavaScript, PHP, Laravel and SQL.
-        </p>
-
-        <p>
-            My goal is to improve my technical skills and build
-            a successful career in the IT field.
-        </p>
-
-        <a href="#contact" class="about-btn">Contact Me</a>
-
-    </div>
-
-</section>
-<!-- Skills Section -->
-<section id="skills">
-
-    <div class="skills-content">
-
-        <p class="section-title">My Skills</p>
-
-        <h1>What I Know</h1>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h2>HTML</h2>
-                <p>Creating the structure of websites.</p>
+                        <div class="float-card float-card--a glass">
+                            <span class="float-card__label">Currently</span>
+                            <span class="float-card__value"><span class="pulse"></span>Open to opportunities</span>
+                        </div>
+                        <div class="float-card float-card--b glass">
+                            <span class="float-card__label">Based in</span>
+                            <span class="float-card__value">Dehradun, India</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h2>CSS</h2>
-                <p>Designing and styling websites.</p>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">01 — About</p>
+                    <h2 class="display">A little <em>about</em> me.</h2>
+                </div>
+
+                <div class="about__grid">
+                    <figure class="about__quote glass reveal">
+                        <span class="quote-mark" aria-hidden="true">“</span>
+                        <blockquote>
+                            Good software is quiet. It does its job, looks considered,
+                            and respects the person using it.
+                        </blockquote>
+                        <figcaption>
+                            <span class="line"></span>
+                            Khushi Kumari
+                        </figcaption>
+                    </figure>
+
+                    <div class="about__text reveal">
+                        <p class="about__lead">
+                            Hello! My name is Khushi Kumari. I am an MCA student
+                            and a passionate web developer.
+                        </p>
+                        <p>
+                            I have completed my BCA and I'm currently pursuing my MCA.
+                            I'm learning HTML, CSS, JavaScript, PHP, Laravel and SQL,
+                            and applying them to real projects.
+                        </p>
+                        <p>
+                            My goal is to improve my technical skills and build
+                            a successful career in the IT field.
+                        </p>
+
+                        <dl class="about__meta">
+                            <div><dt>Education</dt><dd>BCA · MCA (ongoing)</dd></div>
+                            <div><dt>Focus</dt><dd>Web, Cloud &amp; Data</dd></div>
+                            <div><dt>Location</dt><dd>Dehradun, Uttarakhand</dd></div>
+                        </dl>
+
+                        <a href="#contact" class="link-arrow">
+                            Let's work together
+                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h2>JavaScript</h2>
-                <p>Adding interaction to websites.</p>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">02 — Skills</p>
+                    <h2 class="display">What I <em>work</em> with.</h2>
+                </div>
+
+                <div class="skills__grid">
+                    <article class="skill glass reveal">
+                        <div class="skill__top">
+                            <span class="skill__num">01</span>
+                            <span class="skill__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Structuring, styling and bringing interfaces to life with clean, responsive code.</p>
+                        <ul class="tags">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill glass reveal">
+                        <div class="skill__top">
+                            <span class="skill__num">02</span>
+                            <span class="skill__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="4" width="18" height="6" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="18" height="6" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 7h.01M7 17h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                            </span>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Learning server-side development and building web applications with the Laravel framework.</p>
+                        <ul class="tags">
+                            <li>PHP</li><li>Laravel</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill glass reveal">
+                        <div class="skill__top">
+                            <span class="skill__num">03</span>
+                            <span class="skill__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                            </span>
+                        </div>
+                        <h3>Database</h3>
+                        <p>Working with databases, queries and data modelling to power real applications.</p>
+                        <ul class="tags">
+                            <li>SQL</li><li>MySQL</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h2>PHP</h2>
-                <p>Learning server-side web development.</p>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section__head section__head--split reveal">
+                    <div>
+                        <p class="eyebrow">03 — Selected work</p>
+                        <h2 class="display">What I've <em>built.</em></h2>
+                    </div>
+                    <p class="section__note">Four projects, from e-commerce to hospitality, each a step forward in craft.</p>
+                </div>
+
+                <div class="projects reveal">
+                    <a href="#" class="project">
+                        <span class="project__num">01</span>
+                        <span class="project__meta"><span>E-commerce</span><span>2025</span></span>
+                        <span class="project__body">
+                            <h3>Creamer Cake Website</h3>
+                            <p>A cake ordering website where users can view cakes, add products to cart and place orders.</p>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>PHP</li><li>Laravel</li><li>MySQL</li></ul>
+                        </span>
+                        <span class="project__arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="sr-only">View project: Creamer Cake Website</span>
+                    </a>
+
+                    <a href="#" class="project">
+                        <span class="project__num">02</span>
+                        <span class="project__meta"><span>Hospitality</span><span>2025</span></span>
+                        <span class="project__body">
+                            <h3>Hotel Management Website</h3>
+                            <p>A hotel website for displaying rooms, services and booking information.</p>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        </span>
+                        <span class="project__arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="sr-only">View project: Hotel Management Website</span>
+                    </a>
+
+                    <a href="#" class="project">
+                        <span class="project__num">03</span>
+                        <span class="project__meta"><span>Web App</span><span>2024</span></span>
+                        <span class="project__body">
+                            <h3>Student Registration System</h3>
+                            <p>A simple web-based student registration form for collecting student information.</p>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li></ul>
+                        </span>
+                        <span class="project__arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="sr-only">View project: Student Registration System</span>
+                    </a>
+
+                    <a href="#" class="project">
+                        <span class="project__num">04</span>
+                        <span class="project__meta"><span>Personal Brand</span><span>2026</span></span>
+                        <span class="project__body">
+                            <h3>Personal Portfolio</h3>
+                            <p>My personal portfolio website to showcase my skills, projects, certificates and contact details.</p>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        </span>
+                        <span class="project__arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="sr-only">View project: Personal Portfolio</span>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h2>Laravel</h2>
-                <p>Building web applications using PHP framework.</p>
+        <!-- Certificates -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">04 — Certificates</p>
+                    <h2 class="display">Proof of <em>progress.</em></h2>
+                </div>
+
+                <div class="certs__grid">
+                    <article class="cert glass reveal">
+                        <div class="cert__media">
+                            <img src="web-development.jpg" alt="Web Development Certificate" loading="lazy">
+                        </div>
+                        <div class="cert__body">
+                            <p class="cert__cat">Frontend</p>
+                            <h3>Web Development</h3>
+                            <p>Certificate in Web Development covering HTML, CSS and JavaScript.</p>
+                            <a href="#" class="link-arrow">View Certificate
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="cert glass reveal">
+                        <div class="cert__media">
+                            <img src="php-laravel.jpg" alt="PHP and Laravel Certificate" loading="lazy">
+                        </div>
+                        <div class="cert__body">
+                            <p class="cert__cat">Backend</p>
+                            <h3>PHP &amp; Laravel</h3>
+                            <p>Certificate related to PHP and Laravel web application development.</p>
+                            <a href="#" class="link-arrow">View Certificate
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="cert glass reveal">
+                        <div class="cert__media">
+                            <img src="sql.jpg" alt="SQL Certificate" loading="lazy">
+                        </div>
+                        <div class="cert__body">
+                            <p class="cert__cat">Database</p>
+                            <h3>SQL &amp; Database</h3>
+                            <p>Certificate in SQL and database management concepts.</p>
+                            <a href="#" class="link-arrow">View Certificate
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="cert glass reveal">
+                        <div class="cert__media">
+                            <img src="cloud.jpg" alt="Cloud Computing Certificate" loading="lazy">
+                        </div>
+                        <div class="cert__body">
+                            <p class="cert__cat">Cloud</p>
+                            <h3>Cloud Computing</h3>
+                            <p>Certificate related to cloud computing and cloud technologies.</p>
+                            <a href="#" class="link-arrow">View Certificate
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h2>SQL</h2>
-                <p>Working with databases and queries.</p>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info reveal">
+                        <p class="eyebrow eyebrow--light">05 — Contact</p>
+                        <h2 class="display display--light">Have an idea?<br><em>Let's talk.</em></h2>
+                        <p class="contact__lead">
+                            Feel free to reach out for any project, internship or professional
+                            opportunity. I'm always interested in learning new things and
+                            working on new projects.
+                        </p>
+
+                        <ul class="contact__list">
+                            <li>
+                                <span class="contact__label">Email</span>
+                                <a href="mailto:your-email@gmail.com" id="contact-email">your-email@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Phone</span>
+                                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Location</span>
+                                <span>Dehradun, Uttarakhand</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact__form-wrap reveal">
+                        <form class="form" id="contact-form" novalidate>
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea…" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--gold btn--block">Send Message</button>
+                            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </div>
-
-</section>
-<!-- Projects Section -->
-<section id="projects">
-
-    <div class="projects-content">
-
-        <p class="section-title">My Projects</p>
-
-        <h1>What I Have Built</h1>
-
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h2>Creamer Cake Website</h2>
-
-                <p>
-                    A cake ordering website where users can
-                    view cakes, add products to cart and place orders.
-                </p>
-
-                <p class="technologies">
-                    HTML | CSS | PHP | Laravel | MySQL
-                </p>
-
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h2>Hotel Management Website</h2>
-
-                <p>
-                    A hotel website for displaying rooms,
-                    services and booking information.
-                </p>
-
-                <p class="technologies">
-                    HTML | CSS | JavaScript
-                </p>
-
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h2>Student Registration System</h2>
-
-                <p>
-                    A simple web-based student registration
-                    form for collecting student information.
-                </p>
-
-                <p class="technologies">
-                    HTML | CSS | PHP | MySQL
-                </p>
-
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <h2>Personal Portfolio</h2>
-
-                <p>
-                    My personal portfolio website to showcase
-                    my skills, projects, certificates and contact details.
-                </p>
-
-                <p class="technologies">
-                    HTML | CSS | JavaScript
-                </p>
-
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- Certificates Section -->
-<section id="certificates">
-
-    <div class="certificates-content">
-
-        <p class="section-title">My Certificates</p>
-
-        <h1>My Achievements</h1>
-
-        <div class="certificates-container">
-
-            <!-- Certificate 1 -->
-            <div class="certificate-card">
-
-                <img src="web-development.jpg" alt="Web Development Certificate">
-                <h2>Web Development</h2>
-
-                <p>
-                    Certificate in Web Development covering
-                    HTML, CSS and JavaScript.
-                </p>
-
-                <a href="#" class="certificate-btn">
-                    View Certificate
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#home" class="brand brand--light" aria-label="Back to top">
+                    <span class="brand__mark">K</span>
+                    <span class="brand__name">Khushi Kumari</span>
                 </a>
+                <p>MCA Student · Web Developer</p>
             </div>
 
-
-            <!-- Certificate 2 -->
-            <div class="certificate-card">
-                <img src="php-laravel.jpg" alt="PHP and Laravel Certificate">
-                <h2>PHP & Laravel</h2>
-
-                <p>
-                    Certificate related to PHP and Laravel
-                    web application development.
-                </p>
-
-                <a href="#" class="certificate-btn">
-                    View Certificate
-                </a>
-            </div>
-
-
-            <!-- Certificate 3 -->
-            <div class="certificate-card">
-                <img src="sql.jpg" alt="SQL Certificate">
-                <h2>SQL & Database</h2>
-
-                <p>
-                    Certificate in SQL and database
-                    management concepts.
-                </p>
-
-                <a href="#" class="certificate-btn">
-                    View Certificate
-                </a>
-            </div>
-
-
-            <!-- Certificate 4 -->
-            <div class="certificate-card">
-                <img src="cloud.jpg"alt="Cloud Computing Certificate">
-                <h2>Cloud Computing</h2>
-
-                <p>
-                    Certificate related to cloud computing
-                    and cloud technologies.
-                </p>
-
-                <a href="#" class="certificate-btn">
-                    View Certificate
-                </a>
-            </div>
-
+            <nav class="footer__links" aria-label="Footer">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-
-    </div>
-
-</section>
-<!-- Contact Section -->
-<section id="contact">
-
-    <div class="contact-content">
-
-        <p class="section-title">Contact Me</p>
-
-        <h1>Get In Touch</h1>
-
-        <p class="contact-text">
-            Feel free to contact me for any project, internship
-            or professional opportunity.
-        </p>
-
-        <div class="contact-container">
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-
-                <h2>Let's Talk</h2>
-
-                <p>
-                    I am always interested in learning new things
-                    and working on new projects.
-                </p>
-
-                <p>
-                    📧 Email: your-email@gmail.com
-                </p>
-
-                <p>
-                    📱 Phone: +91 XXXXX XXXXX
-                </p>
-
-                <p>
-                    📍 Location: Dehradun, Uttarakhand
-                </p>
-
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-
-                <form>
-
-                    <input type="text"
-                           placeholder="Your Name"
-                           required>
-
-                    <input type="email"
-                           placeholder="Your Email"
-                           required>
-
-                    <textarea
-                        placeholder="Your Message"
-                        rows="6"
-                        required></textarea>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
-
+        <div class="container footer__bottom">
+            <p>© <span id="year">2026</span> Khushi Kumari. All Rights Reserved.</p>
+            <p class="footer__tag">Designed with intention.</p>
         </div>
+    </footer>
 
-    </div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-
-    <h2>Khushi Kumari</h2>
-
-    <p>
-        MCA Student & Web Developer
-    </p>
-
-    <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <p class="copyright">
-        © 2026 Khushi Kumari. All Rights Reserved.
-    </p>
-
-</footer>
-
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
